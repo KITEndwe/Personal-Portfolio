@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row section{
+    display: flex;
+    gap: 90px;
+}
+.footer2{
+    display: flex;
+    gap: 50px;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    width: 90px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: 0.3s ease;
+    
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+hr{
+    width: 90%;
+    margin-left: 5%;
+    border: gray 2px solid;
+    
+}
+
+.copy{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.up{
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+/*-------------------RESPONSIVE---------------*/
+@media (max-width:767px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .footer-col{
+        width: 100%;
+
+    }
+    .container{
+        width: 500px;
+    }
+    .footer2{
+        display: flex;
+        gap: 50px;
+    }
+    
+}
+

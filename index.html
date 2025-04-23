@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSEtech portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"> <span>B</span>SEtech</h1>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header" >Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portifolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" onclick="closemenu()" ></i> 
+                </ul>
+                <i class="fa fa-bars"  onclick="openmenu()"></i>
+            </nav>
+            <div class="headr-text">
+                <p>Web Developer & UI/UX Designer</p>
+                <h1>Hi I'm <span>Elijah</span> <br> Mwange from Zambia</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------------About------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/BSE GJP.jpg" alt="">
+                    <a href="#contact" class="btn">Hire Me</a>
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a multidisplinary creative professional, I excel in various roles, including Front-End Web Development, Graphic Design,
+                        UX/UI, Training, and Freelancing. With a passion for innovation and a knee eye for detail, I deliver high-qualitysolution
+                        that captive audiences and drive results.
+                    </p>
+                    <h3 id="technique">Technical Expertise</h3>
+                    <ul class="technique">
+                        <li><span>Front-End Web Development:</span> HTML5, CSS, JavaScript, and React</li>
+                        <li><span>Graphic Design:</span>Adobe Photoshop, Canvas, And Figma</li>
+                        <li><span>UX/Ui:</span> User research, wireframing, prototyping, Usability testing </li>
+                        <li><span>Training:</span>Workshop facilitation, online course creation, and mentoring</li>
+                        <li><span>Freelance Services:</span> As a freelancer, I offer a range of services tailored to meet the unique needs of my clients. whether it is 
+                        building a responsive website, crafting a visually stunning brand identity, or optimizing user experience, I am dedicated to delivering exceptional results. </li>
+                    </ul>
+                         <div class="tab-titles " >
+                            <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')" >Experiences</p>
+                            <p class="tab-links" onclick="opentab('education')" >Education</p>
+                         </div>
+                         <div class="tab-contents active-tab " id="skills">
+                            <ul>
+                                <li><span>UI/UX</span> <br> Dedigning Web/App interfarces </li>
+                                <li><span>Web Development</span> <br> Web  App Development </li>
+                                <li><span>Graphic Designer</span> <br> Designing Business Card, ID card, Wedding Card, Poster, Banner and More... </li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Current</span> <br> UI/UX Dedign and Graphic design  </li>
+                                <li><span>2021 - June 2022</span> <br> Working At a Stationary </li>
+                                <li><span>2018 - 2022</span> <br> Teaching at Primary and Secondary School </li>
+                                <li><span>2017 - 2018</span> Volonteering at CFS with Save the Chidren</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2026</span> <br> Bachelor in Computer Science</li>
+                                <li><span>2024</span> <br> Certificate in Web Development and Digital Design From Genius Education Zambia </li>
+                                <li><span>2020</span> <br> Certificate in Computer Studies From Mansa Trades Training Institute </li>
+                                <li><span>2016</span> <br> Diploma in Teaching From Chanfubu Institute</li>
+                            </ul>
+                         </div>
+                </div>
+                <div class="form">
+                    <h3 class="connect">Let's Connect</h3>
+                    <p>If you are looking for a collaborative partner who can help elevate your brand, improve user experience, or provide 
+                        expert training, let's connect! Feel free to explore my portifolio,and don't hesitate to reach out to 
+                        discuss your next project. <br>
+                    <button id="conn" class="btn2" type="submit">Connect</button>   
+                    </p>
+
+                    <div class="conn" >
+                        <form id="connect-form" action="mailto:elijahmwange55@gmail.com" method="post" enctype="text/plain" >
+                            <h3>Get in Touch</h3> <br>
+                            <p>Please fill out the form below to get in touch with me.</p> <br>
+                            <input type="text" placeholder="Enter your Name" required> <br>
+    
+                            <input type="email" placeholder="Enter Your Email"> <br>
+    
+                            <input type="tel" placeholder="Phone number"> <br>
+    
+                            <textarea name="message" id="message" placeholder="Describe Your Project Here"></textarea>
+                            <button id="connect" class="btn2" type="submit">Submit</button>
+                        </form>
+                        <h1 id="cancele"><i class="fa fa-times" style="font-size:36px"></i></h1>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <!---------------------------------Services------------------------------>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <img src="Assets/icon-1.png" alt="">
+                    <h2>App Design</h2>
+                    
+                </div>
+                <div>
+                    <img src="Assets/icon-6.png" alt="">
+                    <h2>UI/UX Design</h2>
+                    
+                    
+                </div>
+                <div>
+                    <img src="Assets/icon-7.png" alt="">
+                    <h2>Html,Css & JavaScript</h2>
+                    
+                </div>
+                <div>
+                    <img src="Assets/icon-8.png" alt="">
+                    <h2>Graphic Design</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------Portifolio----------------------- -->
+     <div id="portifolio">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="Assets/Food-Menu.jpg" alt="">
+                    <div class="layer">
+                        <h3>Business Banner</h3>
+                        <p>I make the design that will attract customers and make your business 
+                            known to people in your city and outside the city as well.
+                        </p>
+                        <a href="#"><i class="fa fa-external-link" ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/canva2.webp" >
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Connects you to the talented people around the world.
+                            With the outstanding person portifolio.
+                        </p>
+                        <a href="#"><i class="fa fa-external-link" ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/E-commerce 1.webp" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p> We create an E-commerce website for your business to facilitate 
+                            your Customers to purchase online or to make your products visible to 
+                            everyone. 
+                        </p>
+                        <a href="#"><i class="fa fa-external-link" ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+     </div>
+        <!-- -------------------------------------------------------Software Used----------------------------------- -->
+        <div class="slide-container">
+            <div class="slide-content">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="Assets/Photoshop.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name" style="color: black;">Adobe Photoshop</h2>
+                            <p class="description" style="color: black;">Adobe Photoshop is a popular <br> image editing and manupulation software used for creating 
+                                and enhancing visual content, Editing and retourching photos, creating digital art and illutrations,
+                                designing graphics and visual elements for websites and applications.
+                            </p>
+
+                           
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="Assets/figma (1).png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name" style="color: black;">Figma</h2>
+                            <p class="description" style="color: black;">Figma is a cloud-based graphic <br> design  and user interface(UI) design 
+                                tool used for creatingand collaborating on visual projects, Designing user interface and experience (UX/UI) for websites
+                            and applications, Creating wireframes, prototypes, and high-didelity designs</p>
+
+                        
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="Assets/canvas.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name" style="color: black;">Canva</h2>
+                            <p class="description" style="color: black;">Canva is a popular graphic <br> design platform used 
+                            for creating visual content, such as social media graphics, presentations, documents, posts, stories, 
+                         </p>
+
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="Assets/html,css,javascript.png" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name" style="color: black;">HTML, CSS and Javascript</h2>
+                            <p class="description" style="color: black;">These are web development toos <br> used to design a website.
+                            <span>HTML</span> Is a standard markup language used for creating the structure and content of web pages
+                                It defines the structure and organization of web page content.
+                              <span>CSS</span> is a styling language used for controlling the layout, appearance, and behavior of web pages.
+                                 <span>JavaScript</span> is a programming language used for adding interactivity and dynamic effects to web pages.</p>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- =========================================Testmonial============================== -->
+         <h1 class="sub-title" style="text-align: center;">What My Customers Say</h1>
+        <section class="testimonial">
+           
+            <div class="comment">
+                <div class="img">
+                    <img src="Assets/NK.jpg" alt="">
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, officiis
+                         atque consequuntur tempore culpa nisi facilis ratione .</p>
+                         <h1>Kalenga NK</h1>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="img">
+                    <img src="Assets/Elijah.jpg" alt="">
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, officiis
+                         atque consequuntur tempore culpa nisi facilis ratione .</p>
+                         <h1>Elijah M</h1>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="img">
+                    <img src="Assets/Elijah2.jpg" alt="">
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, officiis
+                         atque consequuntur tempore culpa nisi facilis ratione.</p>
+                         <h1>David M</h1>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="img">
+                    <img src="Assets/Elijah3.jpg" alt="">
+                </div>
+                <div class="descr">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, officiis
+                         atque consequuntur tempore culpa nisi facilis ratione.</p>
+                         <h1>Jonnathan</h1>
+                </div>
+            </div>
+        </section>
+     <!-- -----------------------------------------Contact----------------------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- <section> -->
+                        <div>
+                             <i class="fa fa-commenting" style="font-size:38px;color:red"></i>
+                            <p >  elijahmwange55@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone-square" style="font-size:38px;color:red"></i>
+                            <p  >+260772903446</p>
+                        </div>
+                    <!-- </section> -->
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"> <i class="fab fa-facebook-f" ></i> </a>
+                        <a href=""> <i class="fab fa-linkedin-in" ></i> </a>
+                        <a href=""> <i class="fab fa-whatsapp" ></i> </a>
+                        <a href=""> <i class="fab fa-instagram" ></i> </a>
+                    </div>
+                    <a href="Assets/BSE CV.pdf" download class="btn btn2">Downloard CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="mailto:elijahmwange55@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- -------------------------------------------------------------footer-------------------------------------------------- -->
+      <footer class="footer" >
+            <a class="up" href="#header" class="btn btn-info btn-lg">
+              <span class="glyphicon glyphicon-chevron-up"></span> Up
+            </a>
+        <div class="container">
+            <div class="row">
+                <section>
+                    <div class="footer-col">
+                        <h4>BSEtech</h4>
+                        <ul>
+                            <li> <a href="">About Us</a> </li>
+                            <li> <a href="">Services</a> </li>
+                            <li> <a href="">Vission</a> </li>
+                            <li> <a href="">Aim</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li> <a href="">FAQ</a> </li>
+                            <li> <a href="">Hire Me</a> </li>
+                            <li> <a href="">Make Order</a> </li>
+                            <li> <a href="">Partnerships</a> </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="footer2">
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li> <a href="">Invitation Card</a> </li>
+                            <li> <a href="">Banner Design</a> </li>
+                            <li> <a href="">WebSite Design</a> </li>
+                            <li> <a href="">More...</a> </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href=""> <i class="fab fa-facebook-f" ></i> </a>
+                            <a href=""> <i class="fab fa-linkedin-in" ></i> </a>
+                            <a href=""> <i class="fab fa-whatsapp" ></i> </a>
+                            <a href=""> <i class="fab fa-instagram" ></i> </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <br> <br><br>
+            <hr>
+            <div class="copy">
+                <p>&copy; BSEtech All Right Reserved </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
